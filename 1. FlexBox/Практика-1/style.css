@@ -1,0 +1,17 @@
+.flex-container{
+    display: flex;  /* flex | inline-flex - тип flexbox */
+    flex-direction: row; /* row | row-reverse | column | column-reverse - направление осей flex контенера */
+    flex-wrap: wrap; /* nowrap | wrap | wrap-reverse - перенос контента */
+    justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around */
+
+    /* flex-flow: flex-direction flex-wrap; */
+}
+
+.flex-element{
+    order: 0; /* 0! | -n | n - порядковый номер элемента */  
+    flex-grow: 1; /*  0! | n - как много свободного пространства во flex-контейнере должно быть назначено текущему элементу */
+    flex-shrink: 0; /* 0 | 1! | n - фактор сжатия flex-элемента */
+    flex-basis: 0; /* auto! | 0 | px/% - базовый размер элемента */
+
+    /* flex: none | flex-grow flex-shrink flex-basis */
+}

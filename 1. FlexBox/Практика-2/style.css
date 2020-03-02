@@ -1,0 +1,48 @@
+.flex-container{
+    display: flex;  /* flex | inline-flex - тип flexbox */
+    flex-direction: row; /* row | row-reverse | column | column-reverse - направление осей flex контенера */
+    flex-wrap: wrap; /* nowrap | wrap | wrap-reverse - перенос контента */
+    justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around */
+
+    /* flex-flow: flex-direction flex-wrap; */
+
+    padding: 0;
+}
+
+.flex-element{
+    order: 0; /* 0! | -n | n - порядковый номер элемента */  
+    flex-grow: 1; /*  0! | n - как много свободного пространства во flex-контейнере должно быть назначено текущему элементу */
+    flex-shrink: 0; /* 0 | 1! | n - фактор сжатия flex-элемента */
+    flex-basis: auto; /* auto! | 0 | px/% - базовый размер элемента */
+
+    /* flex: none | flex-grow flex-shrink flex-basis */
+
+    margin: 0; border-radius: 0;
+    outline: greenyellow solid 1px ;
+    text-align: center;
+}
+
+.header {
+    flex-basis: 100%;
+}
+.navbar{
+    flex-basis: 100%;
+    margin: 5px 0;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: 50vh;
+    margin: 0 0 5px 0;
+}
+.content{ 
+    flex-basis: 720px;
+    margin-right: 5px;
+}
+.aside{ 
+    /* flex-basis: 25%; */
+}
+.footer > *{
+    flex-basis: 45%;
+} 
